@@ -1,78 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Thêm Font Awesome -->
     <link rel="stylesheet" href="stylekhuyen.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-<div class="container">
-    <div class="profile-image">
-        <img src="khuyen.jpg" alt="Profile Image">
-    </div>
-    <div class="profile-text">
-        <!-- Personal Webpage Button -->
-        <div class="personal-webpage">
-            <a href="webcanhan (1).html" target="_blank">
-                <button class="webpage-button">
-                    <i class="fas fa-home"></i>
-                    <span>Trang chủ</span>
-                </button>
-            </a>
-        </div>
-
-        <center><h1>Nguyễn Thị Mai Khuyên</h1></center>
-        <p><center>Don't despair, life is like an electrocardiogram, if everything goes</center> <center>smoothly, doesn't that mean you're dead?</center></p>
-
-        <!-- About Me Section -->
-        <button class="section-title" onclick="toggleInfo('aboutInfo')"><center style="color: rgb(16, 123, 121);">Thông tin</center></button>
-        <div id="aboutInfo" class="info">
+    <!-- Thanh điều hướng -->
+    <header>
+        <nav>
             <ul>
-                <li>Tên: Nguyễn Thị Mai Khuyên</li>
-                <li>Ngày sinh: 22/09/2005</li>
-                <li>Quê quán: Ba Vì</li>
-                <li>Ngành học: Công nghệ thông tin</li>
-                <li>Trường: Đại học Thủ Đô</li>
-                <li>Web trường: <a href="https://daotao.hnmu.edu.vn/">Trang Đào tạo HNMU</a></li>
+                <li>
+                    <a href="#intro" class="home-button">
+                        <i class="fas fa-home"></i> <!-- Biểu tượng ngôi nhà -->
+                    </a>
+                </li>
+                <li><a href="#intro">Trang chính</a></li>
+                <li><a href="#thong-tin">Thông tin</a></li>
+                <li><a href="#so-thich">Sở thích</a></li>
+                <li><a href="#lien-he">Liên hệ</a></li>
             </ul>
-        </div>
+        </nav>
+    </header>
 
-        <!-- Experience Section -->
-        <button class="section-title" onclick="toggleInfo('experienceInfo')"><center style="color: rgb(16, 123, 121);">Sở thích</center></button>
-        <div id="experienceInfo" class="info">
-            <div>
-                <h4>Du Lịch</h4>
-                <p>Tôi yêu thích khám phá những địa điểm mới và tìm hiểu về văn hóa của các vùng miền khác nhau.</p>
-            </div>
-            <div>
-                <h4>Âm Nhạc</h4>
-                <p>Nghe nhạc mang lại cảm giác thư giãn và là cách tuyệt vời để giải tỏa cảm xúc. Âm nhạc giúp giảm căng thẳng, khơi dậy sự sáng tạo và truyền cảm hứng.</p>
-            </div>
+    <!-- Phần giới thiệu -->
+    <div id="intro" class="intro">
+        <div class="image-container">
+            <img src="khuyen.jpg" alt="Profile Image">
         </div>
-
-        <!-- Contact Section -->
-        <button class="section-title" onclick="toggleInfo('contactInfo')"><center style="color: rgb(16, 123, 121);">Liên hệ</center></button>
-        <div id="contactInfo" class="info">
-            <p>Email: nguyenthimaikhuyen.2005@gmail.com</p>
-            <p>Phone: 034 333 6905</p>
-            <p>Link Facebook: <a href="https://www.facebook.com/profile.php?id=100055090741684" target="_blank">Xem trang Facebook của tôi</a></p>
+        <h1>Xin chào! Tôi là Nguyễn Thị Mai Khuyên</h1>
+        <p>Chào mừng bạn đến với trang web cá nhân của tôi! Tôi là một sinh viên đam mê công nghệ và khám phá. Mục tiêu của tôi là trở thành một lập trình viên giỏi, giúp cải thiện cuộc sống qua các ứng dụng công nghệ sáng tạo.</p>
+        
+        <!-- Biểu tượng mạng xã hội -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+            <a href="https://linkedin.com" target="_blank">🌐 LinkedIn</a>
+            <a href="https://github.com" target="_blank">🌐 GitHub</a>
         </div>
     </div>
-</div>
 
-<script>
-function toggleInfo(infoId) {
-    const infoDiv = document.getElementById(infoId);
-    if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
-        infoDiv.style.display = "block"; // Show the information
-    } else {
-        infoDiv.style.display = "none"; // Hide the information
-    }
-}
-</script>
+    <!-- Thông tin cá nhân -->
+    <section id="thong-tin" class="section">
+        <h2>Thông tin</h2>
+        <ul>
+            <li><span class="icon">👤</span>Tên: Nguyễn Thị Mai Khuyên</li>
+            <li><span class="icon">🎂</span>Ngày sinh: 22/09/2005</li>
+            <li><span class="icon">🏠</span>Quê quán: Ba Vì</li>
+            <li><span class="icon">📘</span>Ngành học: Công nghệ thông tin</li>
+            <li><span class="icon">🏫</span>Trường: Đại học Thủ Đô</li>
+            <li><span class="icon">🌐</span>Web trường: <a href="https://daotao.hnmu.edu.vn/" style="color: #87CEFA;">Trang Đào tạo HNMU</a></li>
+        </ul>
+    </section>
 
+    <!-- Sở thích -->
+    <section id="so-thich" class="section">
+        <h2>Sở thích</h2>
+        <h3><span class="icon">✈️</span>Du Lịch</h3>
+        <p>Tôi yêu thích khám phá những địa điểm mới và tìm hiểu về văn hóa của các vùng miền khác nhau.</p>
+        <h3><span class="icon">🎶</span>Âm Nhạc</h3>
+        <p>Nghe nhạc mang lại cảm giác thư giãn và là cách tuyệt vời để giải tỏa cảm xúc. Âm nhạc giúp giảm căng thẳng, khơi dậy sự sáng tạo và truyền cảm hứng.</p>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="lien-he" class="section">
+        <h2>Liên hệ</h2>
+        <p><span class="icon">📧</span>Email: nguyenthimaikhuyen.2005@gmail.com</p>
+        <p><span class="icon">📞</span>Phone: 034 333 6905</p>
+        <p><span class="icon">🔗</span>Facebook: <a href="https://www.facebook.com/profile.php?id=100055090741684" target="_blank" style="color: #87CEFA;">Xem trang Facebook của tôi</a></p>
+    </section>
 </body>
 </html>
