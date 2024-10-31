@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1200px;
+    min-height: 100vh;
+    font-family: caudex, serif;
+    font-size: 24px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.face, .intro {
+    height: 100%;
+    padding: 32px;
+}
+
+.face span:first-child {
+    align-self: flex-start;
+    margin-bottom: 60px;
+}
+
+#home {
+    align-self: flex-end;
+    margin-bottom: 60px;
+}
+
+#home:hover {
+    opacity: 0.7;
+}
+
+.face {
+    background: linear-gradient(to bottom, #EEEEEE,#373A40);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.face img {
+    width: 400px;
+    border-radius: 8%;
+    box-shadow: 8px 8px 16px rgba(255, 255, 255, 0.5);
+}
+
+.intro {
+    display: flex;
+    background: linear-gradient(to bottom, #EEEEEE,#373A40);
+    flex-direction: column;
+    align-items: center;
+}
+.intro h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+.intro p {
+    margin-bottom: 16px;
+}
+.intro > .btn > a {
+    display: flex;
+    background-color: #fff;
+    padding-block: 16px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+.intro > .btn > a:hover, #submit:hover {
+    animation: btn 1s forwards;
+}
+@keyframes btn {
+    100% {
+        background: #F6EFBD;
+    }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.form > div {
+    height: 62px;
+    display: flex;
+}
+.form > div img{
+    height: 100%;
+    width: auto;
+}
+.form input{
+    height: 62px;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    border: 1px solid #000;
+}
+#submit {
+    font-size: 24px;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+}
+.info a:hover {
+    opacity: 0.7;
+}

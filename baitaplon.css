@@ -1,0 +1,185 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Xác định kiểu chữ cho toàn bộ trang */
+  margin: 0; /* Loại bỏ khoảng cách mặc định xung quanh body */
+  padding: 0; /* Loại bỏ khoảng cách bên trong body */
+  box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng và chiều cao của phần tử */
+  background-color: #f0f0f0; /* Màu nền nhạt để làm nổi bật các phần tử */
+}
+
+/* Định dạng phần nội dung chính của trang */
+main {
+  padding: 30px; /* Thêm khoảng cách xung quanh nội dung trong main */
+  display: flex; /* Sử dụng Flexbox để bố trí các phần tử con */
+  justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+  gap: 20px; /* Khoảng cách giữa các box */
+}
+
+/* Định dạng cho các phần tử box trong main */
+.box {
+  background-color: #fff; /* Màu nền trắng cho mỗi box */
+  border: 1px solid #ddd; /* Đường viền mỏng màu xám nhạt quanh mỗi box */
+  border-radius: 8px; /* Bo góc cho các box để tạo các góc tròn */
+  padding: 20px; /* Thêm khoảng cách xung quanh nội dung bên trong box */
+  flex: 1; /* Cho phép các box mở rộng để chiếm không gian còn lại */
+  min-width: 150px; /* Đặt chiều rộng tối thiểu cho mỗi box */
+  max-width: 220px; /* Đặt chiều rộng tối đa cho mỗi box */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Đổ bóng rõ hơn cho các box để tạo hiệu ứng nổi bật */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Thêm hiệu ứng chuyển tiếp cho transform, box-shadow và background-color khi hover */
+  text-align: center; /* Căn giữa nội dung văn bản trong box */
+  text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+  color: #fff; /* Màu chữ trắng để nổi bật trên nền tối của các box */
+  font-weight: bold; /* Chữ đậm hơn để dễ đọc hơn */
+  font-size: 16px; /* Kích thước chữ lớn hơn một chút để dễ đọc hơn */
+}
+
+/* Hiệu ứng khi hover vào các box */
+.box:hover {
+  transform: scale(1.05); /* Tăng kích thước của box lên 5% khi hover để tạo hiệu ứng phóng to */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tăng độ bóng của box khi hover để tạo hiệu ứng nổi bật hơn */
+}
+
+/* ảnh */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* tạo 4 cột bằng nhau */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* 4 cột xếp chồng lên nhau */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .image-container{
+    width: 100;
+    height: 100;
+
+}
+.hover-image {
+    width: 100%;
+    height: 100%;
+
+}
+/* cột 1 */
+.hover-image1:hover{
+  content: url("logo.jpg");
+}
+.hover-image2:hover{
+  content: url("thao.jpg");
+}
+ /* cột 2 */
+    .hover-image5:hover{
+  content: url("trangcanhan.jpg");} 
+   .hover-image4:hover{
+  content: url("truong.jpg");} 
+    .hover-image3:hover{
+   content: url("Thuy.jpg");
+}
+/*cột 3 */
+.hover-image6:hover{
+  content: url("nhung.jpg");}
+
+  .hover-image7:hover{
+    content: url("truong.jpg");}
+ .hover-image8:hover{
+   content: url("khuyen.jpg");}
+  
+
+
+
+/* thông tin */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* khung 30 */
+.side {
+  flex: 30%;
+  background-color: #e4dede;
+  padding: 20px;
+}
+
+
+/* khung 70 */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+
+
+/* ô lề dưới */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/*700px xuống dòng,  */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+.circle-image {
+  border-radius: 50%;
+  border: 2px solid #fcfbfb; /* Điều chỉnh độ dày và màu viền */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+h1{
+  text-align: center;
+}
